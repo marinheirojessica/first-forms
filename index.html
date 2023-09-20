@@ -51,6 +51,15 @@
     <script>
         const clientes = []
 
+         //Função para exibir uma mensagem quando o formulário for enviado
+        function Enviar() {
+            const nome = document.getElementById('nome').value;
+
+            if (nome !== '') {
+                alert('Obrigado, ' + nome + '! Seus dados foram encaminhados com sucesso.');
+            }
+        } 
+
         //Função para adicionar um cliente à lista
         function adicionarCliente(){
             const nome =document.getElementById('nome').value;
